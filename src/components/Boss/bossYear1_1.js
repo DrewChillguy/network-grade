@@ -3,6 +3,7 @@ export default [
     id: 5,
     name: "Thanabat",
     lastName: "Phommexay",
+    laoName:'ທະນະບັດ ພົມມີໄຊ',
     photo: "https://i.postimg.cc/yNy1qG0h/boss.jpg",
     generalComputing: "A",
     mathematics: "C+",

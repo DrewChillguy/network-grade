@@ -12,6 +12,7 @@ const Jed = (props) => {
           id,
           name,
           lastName,
+          laoName,
           photo,
           generalComputing,
           mathematics,
@@ -42,6 +43,7 @@ const Jed = (props) => {
                   <br />
                   {lastName}
                 </p>
+                <p className="bg-white font-laos text-xs text-start ml-5 text-slate-500">{laoName}</p>
                 <hr className="w-44 h-0 ml-4 mt-1"></hr>
                 <p className="bg-main-color text-xs font-laos text-center w-24 text-white ml-5 mt-3 rounded-sm p-1">
                   ປີ 1 ພາກຮຽນ 1

@@ -3,6 +3,7 @@ export default [
     id: 10,
     name: "Kamonlat",
     lastName: "Sasawat",
+    laoName:'ກາມົນລັດ ສາສະຫວັດ',
     photo: "https://i.postimg.cc/gjQdqbPp/ning.jpg",
     generalComputing: "A",
     mathematics: "A",

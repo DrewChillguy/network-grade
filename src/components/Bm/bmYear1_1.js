@@ -3,6 +3,7 @@ export default [
     id: 4,
     name: "Hongvilay",
     lastName: "Phathammavong",
+    laoName:'ຫົງວິໄລ ພະທຳມະວົງ',
     photo: "https://i.postimg.cc/x8JVdpN4/bm.jpg",
     generalComputing: "A",
     mathematics: "B",

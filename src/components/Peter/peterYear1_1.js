@@ -3,6 +3,7 @@ export default [
     id: 9,
     name: "Phoutthavong",
     lastName: "Thepvongsa",
+    laoName:'ພຸດທະວົງ ເທບວົງສາ',
     photo: "https://i.postimg.cc/CxjYD2ry/ter.jpg",
     generalComputing: "A",
     mathematics: "B",

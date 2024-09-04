@@ -3,6 +3,7 @@ export default [
     id: 12,
     name: "Jedsada",
     lastName: "Siviengxay",
+    laoName:'ເຈດສະດາ ສີວຽງໄຊ',
     photo: "https://i.postimg.cc/vmbyvvC4/jed.jpg",
     generalComputing: "A",
     mathematics: "C",
