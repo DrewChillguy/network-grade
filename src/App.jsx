@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import data from "./data.js";
 import List from "./components/List.jsx";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Andrew from "./components/Andrew/Andrew.jsx";
 import Kong from "./components/Kong/Kong.jsx";
@@ -21,12 +21,23 @@ import Vidone from "./components/Vidone/Vidone.jsx";
 import Khumphou from "./components/Khumphou/Khumphou.jsx";
 
 function App() {
-  window.onhashchange = () => window.scrollTo(0, 0);
   const [grades, setgrades] = useState(null);
+
+  function ScrollToTop() {
+    const { pathname } = useLocation(); 
+  
+    useEffect(() => {
+      
+      window.scrollTo(0, 0);
+    }, [pathname]); 
+  
+    return null; 
+  }
 
   return (
     <div className="flex flex-col items-center gap-y-5 w-full overflow-x-hidden my-8 ">
       <Routes>
+        <ScrollToTop/>
         <Route path="/" element={<List students={data} grades={grades} />} />
         <Route path="/andrew" element={<Andrew />} />
         <Route path="/kong" element={<Kong />} />
