@@ -3,6 +3,7 @@ import "./App.css";
 import data from "./data.js";
 import List from "./components/List.jsx";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from './components/scrollToTop.jsx';
 
 import Andrew from "./components/Andrew/Andrew.jsx";
 import Kong from "./components/Kong/Kong.jsx";
@@ -24,7 +25,8 @@ function App() {
   const [grades, setgrades] = useState(null);
 
   return (
-    <div className="flex flex-col items-center gap-y-5 w-full overflow-x-hidden my-8 ">      
+    <div className="flex flex-col items-center gap-y-5 w-full overflow-x-hidden my-8 ">   
+    <ScrollToTop />   
         <Routes>
           <Route path="/" element={<List students={data} grades={grades} />} />
           <Route path="/andrew" element={<Andrew />} />
