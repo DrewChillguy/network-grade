@@ -3,7 +3,7 @@ export default [
     id: 10,
     name: "Kamonlat",
     lastName: "Sasawat",
-    photo: "./public/images/ning.jpeg",
+    photo: "https://i.postimg.cc/gjQdqbPp/ning.jpg",
     generalComputing: "A",
     mathematics: "A",
     computerRepair: "A",

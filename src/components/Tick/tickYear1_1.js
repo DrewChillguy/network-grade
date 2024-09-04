@@ -3,7 +3,7 @@ export default [
     id: 6,
     name: "Thunwa",
     lastName: "Phongsa",
-    photo: "./public/images/tick.jpg",
+    photo: "https://i.postimg.cc/SsZmRzTJ/tick.jpg",
     generalComputing: "A",
     mathematics: "C+",
     computerRepair: "C+",

@@ -3,7 +3,7 @@ export default [
     id: 14,
     name: "Vidone",
     lastName: "Keophongsit",
-    photo: "./public/images/vidone.jpg",
+    photo: "https://i.postimg.cc/NF5BHfSb/vidone.jpg",
     generalComputing: "A",
     mathematics: "B",
     computerRepair: "B+",

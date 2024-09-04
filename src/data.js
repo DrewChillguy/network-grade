@@ -3,7 +3,7 @@ export default [
     id: 1,
     name: "Alounyadeth",
     lastName: "Sihamaya",
-    photo: "https://i.postimg.cc/VkPwNyDp/andrew.jpg",
+    photo: "https://i.postimg.cc/Y24fpT41/andrew.jpg",
     generalComputing: "A",
     mathematics: "A",
     computerRepair: "A",

@@ -3,7 +3,7 @@ export default [
     id: 2,
     name: "Phutthasin",
     lastName: "Matthouchan",
-    photo: "./public/images/kong.jpg",
+    photo: "https://i.postimg.cc/rmpLBwVc/kong.jpg",
     generalComputing: "A",
     mathematics: "B",
     computerRepair: "B",

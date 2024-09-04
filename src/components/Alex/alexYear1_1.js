@@ -3,7 +3,7 @@ export default [
       id: 8,
       name: "Phoutavan",
       lastName: "Phunthavong",
-      photo: "./public/images/alex.jpg",
+      photo: "https://i.postimg.cc/tTmHpGJ6/alex.jpg",
       generalComputing: "A",
       mathematics: "D+",
       computerRepair: "C+",
