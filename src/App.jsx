@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import data from "./data.js";
 import List from "./components/List.jsx";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Andrew from "./components/Andrew/Andrew.jsx";
 import Kong from "./components/Kong/Kong.jsx";
@@ -21,6 +21,7 @@ import Vidone from "./components/Vidone/Vidone.jsx";
 import Khumphou from "./components/Khumphou/Khumphou.jsx";
 
 function App() {
+  window.onhashchange = () => window.scrollTo(0, 0);
   const [grades, setgrades] = useState(null);
 
   return (
