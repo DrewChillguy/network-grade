@@ -27,7 +27,7 @@ const Tick = (props) => {
               to="/"
               className="text-main-color bg-white font-bold px-2 py-1 rounded-sm absolute text-md z-10 mt-1 w-full"
             >
-              &#60;<span className="bg-white ml-1 font-laos">ກັບຄືນ</span>
+              &#60;<span className="bg-white ml-1 font-laos text-sm">ກັບຄືນ</span>
               <hr className="w-full h-1 mt-1"></hr>
             </Link>
             <div
