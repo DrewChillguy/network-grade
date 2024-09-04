@@ -10,6 +10,9 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         laos: ["Noto Sans Lao", "sans-serif"],
       },
+      padding: {
+        'custom-1': '1px',
+      },
     },
   },
   plugins: [],

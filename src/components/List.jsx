@@ -39,7 +39,7 @@ const List = (props) => {
                   ບໍ່ໃຫ້ເບິ່ງ
                 </p>
               ) : (
-                <p className="bg-main-color text-xs font-laos text-center w-20 text-white ml-4 mt-2 rounded-sm">
+                <p className="bg-main-color text-xs font-laos text-center w-20 text-white ml-4 mt-2 rounded-sm p-custom-1">
                   ເບິ່ງຄະແນນ
                 </p>
               )}
