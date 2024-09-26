@@ -2,6 +2,7 @@ import React from "react";
 import vidoneYear1_1 from "./vidoneYear1_1.js";
 import vidoneYear1_2 from "./vidoneYear1_2.js";
 import vidoneYear2_1 from "./vidoneYear2_1.js";
+import vidoneYear2_2 from "./vidoneYear2_2.js";
 import { Link } from "react-router-dom";
 
 const Vidone = (props) => {
@@ -195,6 +196,55 @@ const Vidone = (props) => {
                         ຄວາມຮູ້ພຶ້ນຖານໄຟຟ້າ{" "}
                         <span className="text-xl bg-white text-main-color mr-5">
                           {electric}
+                        </span>
+                      </li>
+                    </ul>
+                  </>
+                );
+              })}
+              {vidoneYear2_2.map((student) => {
+                const {
+                  linux,
+                  python,
+                  windowServer,
+                  website,
+                  microchip,
+                } = student;
+                return (
+                  <>
+                    <div className="w-24 h-24 bg-white ml-3" />
+                    <ul className="bg-white text-end ml-5 font-laos pb-3 grow rounded-lg">
+                      <p className="bg-main-color text-xs font-laos text-center w-24 text-white mt-2 mb-2 rounded-sm p-1">
+                        ປີ 2 ພາກຮຽນ 2
+                      </p>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ລີນຸກ{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {linux}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ໄພທ້ອນ{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {python}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ວິນໂດ້ເຊີເວີ້{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {windowServer}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ເວັບໄຊ້{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {website}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ໄມໂຄຊິບ{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {microchip}
                         </span>
                       </li>
                     </ul>

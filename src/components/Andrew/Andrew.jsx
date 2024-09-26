@@ -2,6 +2,7 @@ import React from "react";
 import andrewYear1_1 from "./andrewYear1_1.js";
 import andrewYear1_2 from "./andrewYear1_2.js";
 import andrewYear2_1 from "./andrewYear2_1.js";
+import andrewYear2_2 from "./andrewYear2_2.js";
 import { Link } from "react-router-dom";
 
 const Andrew = (props) => {
@@ -28,13 +29,13 @@ const Andrew = (props) => {
               to="/"
               className="text-main-color bg-white font-bold px-2 py-1 rounded-sm absolute text-md z-10 mt-1 w-full"
             >
-              &#60;<span className="bg-white ml-1 font-laos text-sm">ກັບຄືນ</span>
+              &#60;
+              <span className="bg-white ml-1 font-laos text-sm">ກັບຄືນ</span>
               <hr className="w-full h-1 mt-1"></hr>
             </Link>
             <div
               className="font-poppins text-center bg-white w-80 rounded-lg cursor-pointer flex flex-wrap pt-10"
               key={id}
-
             >
               <img src={photo} className="w-24 h-24 rounded-full mt-3 ml-3" />
               <div className="bg-white">
@@ -43,7 +44,9 @@ const Andrew = (props) => {
                   <br />
                   {lastName}
                 </p>
-                <p className="bg-white font-laos text-xs text-start ml-5 text-slate-500">{laoName}</p>
+                <p className="bg-white font-laos text-xs text-start ml-5 text-slate-500">
+                  {laoName}
+                </p>
                 <hr className="w-44 h-0 ml-4 mt-1"></hr>
                 <p className="bg-main-color text-xs font-laos text-center w-24 text-white ml-5 mt-3 rounded-sm p-1">
                   ປີ 1 ພາກຮຽນ 1
@@ -201,6 +204,57 @@ const Andrew = (props) => {
                   </>
                 );
               })}
+
+              {andrewYear2_2.map((student) => {
+                const {
+                  linux,
+                  python,
+                  windowServer,
+                  website,
+                  microchip,
+                } = student;
+                return (
+                  <>
+                    <div className="w-24 h-24 bg-white ml-3" />
+                    <ul className="bg-white text-end ml-5 font-laos pb-3 grow rounded-lg">
+                      <p className="bg-main-color text-xs font-laos text-center w-24 text-white mt-2 mb-2 rounded-sm p-1">
+                        ປີ 2 ພາກຮຽນ 2
+                      </p>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ລີນຸກ{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {linux}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ໄພທ້ອນ{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {python}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ວິນໂດ້ເຊີເວີ້{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {windowServer}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ເວັບໄຊ້{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {website}
+                        </span>
+                      </li>
+                      <li className="bg-white font-medium flex justify-between items-center">
+                        ໄມໂຄຊິບ{" "}
+                        <span className="text-xl bg-white text-main-color mr-5">
+                          {microchip}
+                        </span>
+                      </li>
+                    </ul>
+                  </>
+                );
+              })}
+
             </div>
           </div>
         );
